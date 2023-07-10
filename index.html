@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+  
 </head>
 <body>
     <header>
         <nav>
           <div class="logo">
-            <img src="img/recipeIcon.jpg" alt="Logo">
+            <img src="recipeIcon.jpg" alt="Logo">
           </div>
           <p id="tasty">Tasty<span>Tracks</span></p>
-          <!-- Add your navbar code here -->
+    
           <ul>
             <li><a href="index.html">Home</a> </li>
             <li><a href="#featured-recipes">Featured Recipes</a></li>
-            <li><a href="#composepg">Compose Recipe</a></li> <!-- Add this line -->
+            <li><a href="#composepg">Compose Recipe</a></li> 
             <li><a href="#contact-form">Contact</a></li>
           </ul>
         </nav>
@@ -203,7 +207,7 @@
 
     recipes.forEach(recipe => {
       const recipeCard = document.createElement('div');
-      recipeCard.className = 'recipe-card';
+      recipeCard.className = 'recipe-card1';
 
       const titleElement = document.createElement('h3');
       titleElement.textContent = recipe.title;
