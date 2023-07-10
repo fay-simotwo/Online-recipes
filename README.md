@@ -15,12 +15,6 @@ The Recipe App is a web application that allows users to discover, create, and s
 ## Author
 CHEPKOECH FAITH
 
-## Features
-
-- View a list of available movies
-- Click on a movie to see its details (poster, runtime, showtime, available tickets)
-- Purchase tickets for a selected movie
-
 ## Technologies Used
 - #### HTML (Hypertext Markup Language):
 
