@@ -144,3 +144,42 @@ html{
     cursor: pointer;
     text-decoration: none;
   }
+
+
+#featured-recipes {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  #featured-recipes h2 {
+    font-size: 36px;
+    color: #202030;
+    margin-bottom: 40px;
+  }
+  
+  .recipe-card {
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+    width: calc(33.33% - 40px); /* Adjust the width based on the margin */
+  }
+  
+  .recipe-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .recipe-card img:hover {
+    transform: scale(1.2);
+  }
+  
+  .recipe-card h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #202030;
+  }
+  
