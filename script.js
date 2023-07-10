@@ -97,3 +97,5 @@ function mealRecipeModal(meal) {
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
   }
+
+  
