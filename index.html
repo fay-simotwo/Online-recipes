@@ -141,5 +141,68 @@
     </ul>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const recipeForm = document.getElementById('recipe-form');
+  const recipesContainer = document.getElementById('recipes-container');
+
+  recipeForm.addEventListener('submit', event => {
+    event.preventDefault();
+
+    // Get the values from the form inputs
+    const title = document.getElementById('title').value;
+    const ingredients = document.getElementById('ingredients').value;
+    const instructions = document.getElementById('instructions').value;
+
+    // Create a new recipe object
+    const newRecipe = {
+      title: title,
+      ingredients: ingredients,
+      instructions: instructions
+    };
+
+    // Send the new recipe data to the server
+    fetch('http://localhost:3000/recipes', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newRecipe)
+    })
+      .then(response => {
+        if (response.ok) {
+          console.log('Recipe added successfully!');
+          recipeForm.reset(); // Clear the form inputs after successful submission
+          fetchRecipes(); // Fetch and display updated recipes
+        } else {
+          throw new Error('Failed to add recipe');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  });
+
+  // Fetch recipes on page load
+  fetchRecipes();
+
+  function fetchRecipes() {
+    fetch('http://localhost:3000/recipes')
+      .then(response => response.json())
+      .then(recipes => {
+        displayRecipes(recipes);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }
+
+ 
+
+
+  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>
