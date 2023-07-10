@@ -21,3 +21,7 @@ mealList.addEventListener('click', getMealRecipe);
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
   });
+
+  // Function to get the meal list that matches the ingredients
+function getMealList() {
+  let searchInputTxt = document.getElementById('search-input').value.trim();
