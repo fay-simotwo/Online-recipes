@@ -50,3 +50,97 @@ html{
     margin-top: 2px;
     width: 120px;
   }
+
+#tasty{
+    color:#202030;
+    font-size: 20px;
+    margin-right: 1000px;
+  }
+  span{
+    color: whitesmoke;
+    float: right;
+  }
+  .par{
+    text-align: center;
+    background-color: #141415;
+    color: whitesmoke;
+    font-size: 20px;
+    width: 100%;
+    height:100%;
+    margin-top: -135px;
+    transition: color 0.5s, font-size 0.5s;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .par:hover{
+    color:wheat;
+    font-size: 24px;
+  }
+  
+  /* @keyframes par {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  } */
+  .heros{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    color: #202030;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    color: #808090;
+  }
+  .hero img{
+    width: 100%;
+    height: 1000px;
+    margin-top: -120px;
+  }
+  .heros h1{
+    color: whitesmoke;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .heros p{
+    color: whitesmoke;
+    font-weight: 600;
+    margin-bottom: 220px;
+  }
+  .heros-btn{
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    color: #202030;
+    font-weight: 900;
+    font-size: 30px;
+    background-color: #d58813;
+    margin-top: -400px;
+    position: relative;
+    cursor: pointer;
+  }
+  .heros-btn1{
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    color: #202030;
+    font-weight: 900;
+    font-size: 30px;
+    background-color: #d58813;
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
