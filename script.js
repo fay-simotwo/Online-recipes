@@ -58,3 +58,19 @@ function getMealList() {
       mealList.innerHTML = html;
     });
 }
+
+
+// Function to get the recipe of the selected meal
+function getMealRecipe(e) {
+    e.preventDefault();
+  
+    // Check if the clicked element has the recipe-btn class
+    if (e.target.classList.contains('recipe-btn')) {
+      let mealItem = e.target.parentElement.parentElement;
+  
+      // Fetch the recipe data from the API based on the selected meal ID
+      fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
+        .then(response => response.json())
+        .then(data => mealRecipeModal(data.meals));
+    }
+  }
