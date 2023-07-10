@@ -198,7 +198,31 @@
       });
   }
 
- 
+  function displayRecipes(recipes) {
+    recipesContainer.innerHTML = '';
+
+    recipes.forEach(recipe => {
+      const recipeCard = document.createElement('div');
+      recipeCard.className = 'recipe-card';
+
+      const titleElement = document.createElement('h3');
+      titleElement.textContent = recipe.title;
+
+      const ingredientsElement = document.createElement('p');
+      ingredientsElement.textContent = 'Ingredients: ' + recipe.ingredients;
+
+      const instructionsElement = document.createElement('p');
+      instructionsElement.textContent = 'Instructions: ' + recipe.instructions;
+
+      recipeCard.appendChild(titleElement);
+      recipeCard.appendChild(ingredientsElement);
+      recipeCard.appendChild(instructionsElement);
+
+      recipesContainer.appendChild(recipeCard);
+    });
+  }
+});
+
 
 
   </script>
