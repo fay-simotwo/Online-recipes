@@ -1,0 +1,52 @@
+/* Add your existing CSS styles here */
+html{
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
+    background-color: #d58813;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  nav li{
+    list-style: none;
+    display: inline;
+  }
+  nav ul{
+    font-size: 20px;
+    font-weight: 100;
+  }
+  nav ul:hover{
+    color:none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin-right: 20px;
+    
+  }
+  .logo{
+   margin-left: -19.39px;
+   margin-top: -20px;
+  }
+  .logo img {
+    height: 115px;
+    border-radius: 0px 50px 10px 0px;
+    margin-top: 2px;
+    width: 120px;
+  }
