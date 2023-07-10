@@ -12,3 +12,6 @@ const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
 // Event listener for the search button click
 searchBtn.addEventListener('click', getMealList);
+
+// Event listener for the meal list click
+mealList.addEventListener('click', getMealRecipe);
